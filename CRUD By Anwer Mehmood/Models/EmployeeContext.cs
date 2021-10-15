@@ -14,6 +14,8 @@ namespace CRUD_By_Anwer_Mehmood.Models
 
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Office>Offices { get; set; }
+
     }
 
    

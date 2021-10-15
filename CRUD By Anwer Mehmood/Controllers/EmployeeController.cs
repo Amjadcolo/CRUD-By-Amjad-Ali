@@ -52,7 +52,7 @@ namespace CRUD_By_Anwer_Mehmood.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Delete( int id)
+        public IActionResult Delete(int id)
         {
             var del = _db.Employees.Where(d => d.Id == id).FirstOrDefault();
             return View(del);

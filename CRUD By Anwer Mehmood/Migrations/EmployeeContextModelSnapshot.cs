@@ -38,6 +38,27 @@ namespace CRUD_By_Anwer_Mehmood.Migrations
 
                     b.ToTable("Employees");
                 });
+
+            modelBuilder.Entity("CRUD_By_Anwer_Mehmood.Models.Office", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Offices");
+                });
 #pragma warning restore 612, 618
         }
     }

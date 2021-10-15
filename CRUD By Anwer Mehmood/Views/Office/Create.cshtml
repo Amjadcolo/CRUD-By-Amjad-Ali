@@ -1,0 +1,64 @@
+﻿@model CRUD_By_Anwer_Mehmood.Models.Office
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Create</h1>
+<div class="header-elements py-0">
+    <div class="breadcrumb">
+        <a href="@Url.Action("Index","Home")" class="breadcrumb-item">
+            <i class="icon-home2 mr-2"></i>Dashboard
+        </a>
+        <span class="breadcrumb-item active">  Office </span>
+    </div>
+</div>
+<div class="container">
+    <div class="card border-top-primary border-left-primary">
+        <div class="card-header bg-white header-elements-inline">
+            <h4 class="card-title">Add Office</h4>
+            <div class="header-elements">
+                <div class="list-icons">
+                    <a class="list-icons-item" data-action="collapse"></a>
+                    <a class="list-icons-item ui-sortable-handle" data-action="move"></a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-action="Create">
+                <div class="row">
+                    <div class="col-12 col-sm-3 col-md-3 form-group">
+                        <label>Name<font class="text-danger">*</font></label>
+                        <div class="form-group form-group-feedback form-group-feedback-left">
+                            <input class="form-control has-feedback-left" type="text" asp-for="Name">
+                            <div class="form-control-feedback bg-dark bgwidth">
+                                <i class="icon-phone iconwidth"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3 form-group">
+                        <label>Address<font class="text-danger">*</font></label>
+                        <div class="form-group form-group-feedback form-group-feedback-left">
+                            <input class="form-control has-feedback-left" type="text" asp-for="Address">
+                            <div class="form-control-feedback bg-dark bgwidth">
+                                <i class="icon-list-numbered iconwidth"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3 form-group">
+                        <label>Number<font class="text-danger">*</font></label>
+                        <div class="form-group form-group-feedback form-group-feedback-left">
+                            <input class="form-control has-feedback-left" type="text" asp-for="Number">
+                            <div class="form-control-feedback bg-dark bgwidth">
+                                <i class="icon-list-numbered iconwidth"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 col-sm-12 form-group">
+                        <button type="submit" class="btn btn-primary float-lg-right mt-2 mr-2 m-md-4"><i class="icon-file-text3"> Save</i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
